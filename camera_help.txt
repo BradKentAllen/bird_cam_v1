@@ -1,0 +1,10 @@
+raspistill -o image.jpg
+
+raspistill -k, --keypress image.jpg		# Enter takes photo, use X - Enter to exit
+
+#### OpenCV tests
+
+cd ~/Projects/Python/tflite/object_detection
+python3 TFlite_detection_webcam.py --modeldir=coco_ssd_mobilenet_v1
+
+sudo python3 detect_PiCam.py --modeldir=coco_ssd_mobilenet_v1
